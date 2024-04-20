@@ -1,10 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { ADD_BOOK_UPDATE, ADD_SNAPSHOT, ADD_SUBSCRIPTION } from "./actions";
 
-const priceIdx = 0;
-const countIdx = 1;
-const amountIdx = 2;
-
 const initialState = {
 	subscription: {},
 	channelId: undefined,
