@@ -35,16 +35,18 @@ const orderbooks = (state = initialState, action) => {
 						bids = {
 							...bids,
 							[price]: {
-								count: count,
-								amount: amount,
+								count,
+								amount,
+                                price
 							},
 						};
 					} else {
 						asks = {
 							...asks,
                             [price]: {
-								count: count,
-								amount: amount,
+								count,
+								amount,
+                                price
 							},
 						};
 					}
@@ -67,16 +69,18 @@ const orderbooks = (state = initialState, action) => {
                     updateBids = {
                         ...updateBids,
                         [price]: {
-                            count: count,
-                            amount: amount,
+                            count,
+                            amount,
+                            price
                         },
                     };
                 } else {
                     updateAsks = {
                         ...updateAsks,
                         [price]: {
-                            count: count,
-                            amount: amount,
+                            count,
+                            amount,
+                            price
                         },
                     };
                 }
